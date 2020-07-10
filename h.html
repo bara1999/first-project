@@ -10,20 +10,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src ="script.js"></script>
   </head>
     <body>
        <h1 class="title">stuff I need to do</h1>
+
        <div class="all-tasks">
            <h2 class="task-list-title"> My list</h2>
-           <ul class="task-list">
-            <li class="list-name active-list">Youtube</li>
-            <li class="list-name">Work</li>
-            <li class="list-name">Grocery</li>
+           <ul class="task-list" data-lists>
+           <!--<li class="list-name active-list">Youtube</li>
+           <li class="list-name">Work</li>
+            <li class="list-name">Grocery</li>-->
            </ul>
-           <form action="h.html">
+           <form action="" data-new-list-form >
                <input 
                type="text"
                class="new list"
+               data-new-list-input
                placeholder="new list name"
                aria-label="new list name"
 
@@ -65,7 +68,9 @@
                     id="task-3"
                     />
                     <label for="task-3">
-                        <span class="custom-checkbox"> </span>
+                        <span class="custom-checkbox">    <input type="checkbox"
+                            id="task-3"
+                            />  </span>
                         a third tadk
                     </label>
                 </div>
